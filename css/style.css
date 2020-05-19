@@ -1,0 +1,402 @@
+
+/* mobile styles - mobile first */
+
+/* whole page styles */
+body {
+    font-size: 12pt;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #fff4db;
+    text-align: center;
+}
+
+body a {
+    text-decoration: none;
+    color: #002a70;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* header styles */
+.my-header {
+    font-size: 15pt;
+    background-color: #001236;
+    color: white;
+    border: 3px 10px;
+    text-align: center;
+    border-bottom: 1px solid #f47e00;
+}
+
+#logo img {
+    max-width: 15%;
+    min-width: 60px;
+}
+
+header a {
+    color: #ff0a0a;
+    font-family: 'Squada One', cursive;
+}
+
+#hamburger img {
+    width: 6%;
+    margin: 10px 0;
+}
+
+.my-hbg {
+    display: none;
+}
+
+/* hero images styles */
+#hero-img {
+    overflow: hidden;
+}
+
+#hero-img img {
+    transition: transform 0.5s linear;
+}
+
+#hero-img:hover img {
+    transform: scale(1.5);
+}
+
+/* main content style */
+
+#main-cont {
+    margin: 0 10px;
+}
+
+#main-cont h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    color: darkred;
+}
+
+#main-cont h2{
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 7px 0;
+}
+
+/* styles for sidebar */
+
+#side-bar {
+    margin: 0 10px;
+}
+
+#side-bar li{
+    text-align: left;
+}
+
+#side-bar h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 8px;
+    color: #4f0500;
+}
+
+/* extra content styles */
+
+#extra-cont {
+    margin: 0 10px;
+}
+
+#extra-cont ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#extra-cont h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 8px;
+    color: #4f0500;
+}
+
+#extra-cont ul li {
+    width: 33%;
+}
+
+/* related images styles */
+#related-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin: 20px 10px 0 10px;
+}
+
+#related-img div {
+    overflow: hidden;
+    width: 50%;
+    height: 120px;
+
+}
+
+#related-img div img {
+    transition: transform 0.2s linear;
+}
+
+#related-img div:hover img {
+    transform: scale(1.2);
+}
+
+/* related post styles */
+
+#related-post {
+    margin: 0 10px;
+}
+
+#related-post h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 20px 0 8px;
+    color: #4f0500;
+}
+
+#related-post ul {
+    margin: 12px;
+    text-align: left;
+
+}
+.bullet li {
+    list-style-type: disc;
+}
+
+/* footer styles */
+footer {
+    background-color: #001236;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0.2px 0.2px #ff0000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer button {
+    padding: 5pt;
+    border-radius: 3pt;
+    background-color: red;
+    text-align: center;
+}
+
+/* back-to-top button */
+#back-to-top {
+    text-align: center;
+}
+
+#back a {
+    color: white;
+}
+
+/* contact form */
+.form-info {
+    color: white;
+    font-size: 10pt;
+    margin: 8px 0 10px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info h1 {
+    color: red;
+}
+
+.footer-info p {
+    color: white;
+    font-size: 10pt;
+}
+
+legend {
+    color: #ff2626;
+    padding: 0 0 5px;
+    font-size: 11.5pt;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 10pt;
+}
+
+input {
+    background: rgb(255, 252, 242);
+    border-radius: 0.2em;
+    margin-top: 2pt;
+    border: none;
+}
+
+textarea {
+    background: rgb(255, 252, 242);
+    border-radius: 0.2em;
+    margin-top: 2pt;
+    border: none;
+    width: 170px;
+}
+
+#msg {
+    height: 35px;
+}
+
+#submit-btn {
+    background-color:#ff2626;
+    border: none;
+    color: #fff4db;
+    text-shadow: #4f0500;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 4px 10px;
+    font-size: 10pt;
+    cursor: pointer;
+  }
+
+/* desktop styles */
+@media only screen and (min-width: 650px) {
+
+    /* header styles */
+    
+    .my-header {
+        display: flex;
+        justify-content: space-around;
+        /* position: fixed; */
+        width: 100%;
+        height: 120px;
+        align-content: space-evenly;
+        align-items: center;
+        background-color: #fff4db;
+    }
+
+    #hamburger img{
+        display: none;
+    }
+
+    /* navigation bar */
+
+    .list ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .list ul li {
+        min-width: 150px;
+    }
+
+    /* main content - display grid */
+
+    body {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 0.4fr 0.3fr 0.3fr;
+        grid-template-areas:
+        "head       head             head"
+        "hero       main-content     main-content"
+        "sidebar    main-content     main-content"
+        "sidebar    extra-content    extra-content"
+        "rel-image  rel-image        rel-post"
+        "foot       foot             foot";
+    }
+
+    header {
+        grid-area: head;
+    }
+
+    /* hero image styles */
+
+    #hero-img {
+        grid-area: hero;
+    }
+
+    /* main content styles */
+    
+    #main-cont {
+        grid-area: main-content;
+        text-align: left;
+        padding-right: 20px;
+        margin: 0;
+    }
+
+    /* sidebar styles */
+    #side-bar {
+        grid-area: sidebar;
+        text-align: left;
+        border-bottom: 1px solid #f47e00;
+        border-top: 1px solid #f47e00;
+        margin: 0;
+    }
+
+    #side-bar li {
+        padding: 5px 5px 5px 0;
+    }
+
+    /* extra content styles */
+    #extra-cont {
+        grid-area: extra-content;
+        text-align: left;
+        border-top: 1px solid #f47e00;
+        margin: 0;
+    }
+
+    #extra-cont h2 {
+        padding:0  0 8px 0;
+    }
+
+    /* related images styles */
+    #related-img {
+        overflow: hidden;
+        grid-area: rel-image;
+
+    }
+
+    #related-img div {
+        width: 150px;
+        height: 85px;
+        margin: 3px 0;
+    }
+
+    /* related posts styles */
+    #related-post {
+        grid-area: rel-post;
+        text-align: left;
+        margin: 20px 0 0;
+    }
+
+    #related-post ul {
+        margin: 20px 0 0 20px;
+    }
+
+    #related-post h2 {
+        margin: 0;
+    }
+
+    /* footer styles */
+    footer {
+        grid-area: foot;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+        background-color: #fff4db;
+        color: black;
+        border-top: 1px solid #f47e00;
+    }
+
+    .footer-info {
+        color: red;
+        text-align: left;
+    }
+    .footer-info p {
+        color: black;
+    }
+    .form-info {
+        color: black;
+    }
+
+}

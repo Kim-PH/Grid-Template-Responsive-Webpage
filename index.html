@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Grid + Flexbox</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+            <!-- Header content -->
+        <header class="my-header">
+
+            <section id="logo">
+                <a href=""><img src="images/logo.png" alt="Logo"></a>
+            </section>  
+
+            <section id="hamburger">
+                <a href=""><img src="images/hamburger.png" alt="hamburger"></a>
+            </section>
+            
+            <!-- Main navigation -->
+            <section class="list" >
+                <ul class="my-hbg" id="hbg-hide">
+                    <li>
+                        <a href="">Home</a><span></span>
+                    </li>
+                    <li>
+                        <a href="#plr">Most Popular</a><span></span>
+                    </li>
+                    <li>
+                        <a href="#cgr-intro">Categories</a><span></span>
+                    </li>
+                    <li>
+                        <a href="#my-form">Contact</a><span></span>
+                    </li>
+                </ul>
+            </section>
+        </header>
+
+        <!-- Content in main page -->
+        <section id="hero-img">
+            <a href=""><img src="images/how do you sleep.jpg"></a>
+        </section>
+
+        <section id="main-cont">
+            <h1> How Do You Sleep?<br>
+             Sam Smith</h1>
+            <p>
+                "How Do You Sleep?" is a song by English singer Sam Smith, released on 19 July 2019.
+                Smith co-wrote the song with Savan Kotecha, Max Martin and Ilya, the latter of whom produced the song.
+            </p>
+            <h2>
+                Critical reception
+            </h2>
+            <p>
+                Rolling Stone described the song as a "pop ballad about trying to move on".
+            </p>
+            <h2>
+                Music video 
+            </h2>
+            <p>
+                The music video was released alongside the song on 19 July. It was directed by Grant Singer, with choreography by Parris Goebel,
+                and features Smith dancing with a troupe of shirtless male dancers wearing waist trainers.
+            </p>
+            <h2>
+                Promotion 
+            </h2>
+            <p>
+                Smith posted on their social media accounts on 9 July that they had an announcement to make the following day. 
+                The pre-order link became active on 10 July, and later the same day, Smith formally announced and shared a clip of the song.
+                The song is featured on Now That's What I Call Music! 
+            </p>
+        </section>
+
+        <section id="side-bar">
+            <h2>Activities</h2>
+            <ul>
+                <li><a href="">Meomeo started her live stream</a></li>
+                <li><a href="">John added Monkey - Tone and I to his playlist</a></li>
+                <li><a href="">Anne added Memories - Maroon 5 to her playlist</a></li>
+                <li><a href="">Jane created playlist "Summer"</a></li>
+                <li><a href="">Payphone has been added to your playlist</a></li>
+                <li><a href="">Mary liked a song in your playlist</a></li>
+                <li><a href="">Beebee started his live stream</a></li>
+            </ul>
+        </section>
+
+        <section id="extra-cont">
+            <h2>Same artist:</h2>
+            <ul>
+                <li>
+                    <a href=""><img src="images/Too Good at goodbye.jpg" alt="Toogood"></a>
+                    <p></p><a href="">Too Good At Goodbyes</p> </a>
+                    <p>Too Good At Goodbyes · 2017</p>
+                </li>
+                <li>
+                    <a href=""><img src="images/Stay with me.jpg" alt="Stay"></a>
+                    <p></p><a href="">Stay With Me</p> </a>
+                    <p>In the Lonely Hour · 2014</p>
+                </li>
+                <li>
+                    <a href=""><img src="images/Im not the Only One.jpg" alt="Nottheone"></a>
+                    <p></p><a href="">I'm Not The Only One</p> </a>
+                    <p>In The Lonely Hour · 2014</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="related-img">
+            <div><img src="images/Related 1.jpg" alt="related img 1"></div>
+            <div><img src="images/Related 2.jpg" alt="related img 2"></div>
+            <div><img src="images/Related 3.jpg" alt="related img 3"></div>
+            <div><img src="images/Related 4.jpg" alt="related img 4"></div>
+            <div><img src="images/Related 5.jpg" alt="related img 5"></div>
+        </section>
+
+        <section id="related-post" class="bullet">
+            <h2>Related Posts</h2>
+            <ul>
+                <li><a href=""> Smith's 'To Die For' Is the Perfect Valentine's Day ...</a></li>
+                <li><a href="">Sam Smith releases acoustic version of latest single, 'To Die For' ...</a></li>
+                <li><a href="">Sam Smith Dances His Feelings Away in 'How Do You Sleep ...</a></li>
+            </ul>
+        </section>
+
+        <!-- Footer starts -->
+        <footer id="my-footer">
+
+            <!-- Left side information: company info, scroll to top -->
+            <section class="footer-info">
+                <h1>On Air</h1><br>
+                <p>E-mail: Information@onair.com</p><br>
+                <p>Address: 1750 Finch Ave E,<br> North York, ON M2J 5G3</p> <br>           
+                <section id="back-to-top">
+                    <button id="back"><a href="#logo">Top</a></button>
+                </section> 
+            </section>
+
+            <!-- Contact form -->
+            <section id="my-form">
+                <form action="/HDYS" method="GET">
+                    <fieldset>
+                        <legend id="signup">Contact Us</legend>
+                        
+                        <div class="column">
+                            <div class="form-info">
+                                <label for="name"> Your Name * </label>
+                                <input type="text" id="name" name="fullname" maxlength="20" required />
+                            </div>
+                            <div class="form-info">
+                                <label for="mail">Your Email * </label>
+                                <input type="email" id="mail" name="e-mail" maxlength="20" required />
+                            </div>
+                            <div class="form-info">
+                                <label for="msg">Your Message * </label>
+                                <textarea type="text" id="msg" name="message" maxlength="20" required></textarea>
+                            </div>
+                        </div>
+
+                        <input id="submit-btn" type="submit" />
+                    </fieldset>
+                </form>
+            </section>
+        </footer>
+
+
+        <!-- javaScript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
